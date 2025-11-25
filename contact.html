@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Juan Cruz</title>
+    <style>
+      :root {
+        --bg: #000000;
+        --card: #111111;
+        --muted: #bbbbbb;
+        --accent: #ff3b3b;
+        --glass: rgba(255, 255, 255, 0.03);
+        --radius: 14px;
+        --maxw: 700px;
+        font-family: "Times New Roman", serif;
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+        background: linear-gradient(180deg, #000 0%, #1a0000 40%);
+        background-color: #1a0000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #f1f1f1;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .wrap {
+        width: 100%;
+        max-width: var(--maxw);
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .logo {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: var(--accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: black;
+      }
+      nav a {
+        color: var(--muted);
+        margin-left: 16px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      .card {
+        background: var(--card);
+        padding: 24px;
+        border-radius: var(--radius);
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+        margin-bottom: 24px;
+      }
+      h1,
+      h2 {
+        margin-top: 0;
+        color: white;
+      }
+
+      .contact-info p {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-top: 20px;
+      }
+      input,
+      textarea {
+        background: #000;
+        border: 1px solid #333;
+        padding: 12px;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+      }
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      button {
+        background: var(--accent);
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 17px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        opacity: 0.85;
+      }
+
+      iframe {
+        width: 100%;
+        height: 360px;
+        border: 0;
+        border-radius: 12px;
+        margin-top: 16px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          padding: 20px;
+        }
+        .mark {
+          width: 38px;
+          height: 38px;
+        }
+        nav a {
+          margin-left: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <div class="mark">JC</div>
+          <div>
+            <div style="font-weight: bold">Juan Cruz</div>
+            <div style="font-size: 13px; color: var(--muted)">
+              "Developer" • Problem Solver • Funny Potato
+            </div>
+          </div>
+        </div>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h1>Contact Me</h1>
+        <p style="color: var(--muted)">
+          Feel free to reach out! I'm mostly available during the week, so if
+          you have a question, project idea, or even a silly thought — send it
+          my way!
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Send a Message</h2>
+        <form
+          action="https://formsubmit.co/jandresjr0504@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="box" />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Other Ways to Reach Me</h2>
+        <div class="contact-info">
+          <p>
+            <strong>Email: </strong
+            ><a
+              href="mailto:juanc@cruzantonio.net"
+              style="color: var(--accent); text-decoration: none"
+              >juanc@cruzantonio.net</a
+            >
+          </p>
+          <p>
+            <strong>Phone: </strong
+            ><a
+              href="tel:+16198189388"
+              style="color: var(--accent); text-decoration: none"
+              >(619) 818-9388</a
+            >
+          </p>
+          <p><strong>Location:</strong> San Diego, CA United States</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d429158.43807387986!2d-117.43739951592039!3d32.82405595089689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9530fad921e4b%3A0xd3a21fdfd15df79!2sSan%20Diego%2C%20CA!5e0!3m2!1sen!2sus!4v1763962124316!5m2!1sen!2sus"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </section>
+
+      <footer>© 2025 Juan Cruz — All rights reserved.</footer>
+    </div>
+  </body>
+</html>

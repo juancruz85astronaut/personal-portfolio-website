@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Juan Cruz</title>
+    <style>
+      :root {
+        --bg: #000000;
+        --card: #111111;
+        --muted: #bbbbbb;
+        --accent: #ff3b3b;
+        --glass: rgba(255, 255, 255, 0.03);
+        --radius: 14px;
+        --maxw: 900px;
+        font-family: "Times New Roman", serif;
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+        background: linear-gradient(180deg, #000 0%, #1a0000 40%);
+        background-color: #1a0000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #f1f1f1;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .wrap {
+        width: 100%;
+        max-width: var(--maxw);
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .logo {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: var(--accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: black;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      .card {
+        background: var(--card);
+        padding: 24px;
+        border-radius: var(--radius);
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+      }
+      h1,
+      h2 {
+        margin-top: 0;
+        color: white;
+      }
+
+      .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .project-item {
+        background: #1a0000;
+        padding: 18px;
+        border-radius: 12px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        border: 1px solid #330000;
+      }
+
+      .project-thumb {
+        width: 160px;
+        height: 100px;
+        background: #330000;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--muted);
+        font-size: 14px;
+        overflow: hidden;
+      }
+
+      .project-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .project-info {
+        flex: 1;
+        min-width: 240px;
+      }
+
+      .project-links a {
+        display: inline-block;
+        background: var(--accent);
+        color: white;
+        padding: 8px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .project-links a.secondary {
+        background: transparent;
+        border: 1px solid #333;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      /* MOBILE FIXES */
+      @media (max-width: 700px) {
+        body {
+          padding: 20px 12px;
+        }
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        nav {
+          justify-content: flex-start;
+        }
+        .project-item {
+          flex-direction: column;
+          align-items: center;
+        }
+        .project-thumb {
+          width: 100%;
+          height: auto;
+          aspect-ratio: 16/9;
+        }
+        .project-info {
+          min-width: 100%;
+        }
+        h1 {
+          font-size: 28px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <div class="mark">JC</div>
+          <div>
+            <div style="font-weight: bold">Juan Cruz</div>
+            <div style="font-size: 13px; color: var(--muted)">
+              "Developer" • Problem Solver • Funny Potato
+            </div>
+          </div>
+        </div>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h1>My Projects</h1>
+        <p style="color: var(--muted)">
+          Here are some of the projects I’ve worked on — a mix of fun programs
+          for people to use
+        </p>
+      </section>
+
+      <section class="card" style="margin-top: 24px">
+        <div class="project-list">
+          <div class="project-item">
+            <div class="project-thumb">
+              <img src="project1.jpg" alt="Project Preview" />
+            </div>
+            <div class="project-info">
+              <h2>Linear Equation Solver</h2>
+              <p>World of MATLAB unleashed</p>
+              <div class="project-links">
+                <a href="#">Live Demo</a>
+                <a
+                  href="https://github.com/juancruz85astronaut/linear-matlab-solver"
+                  class="secondary"
+                  >Github</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-thumb">
+              <img src="project2.jpg" alt="Project Preview" />
+            </div>
+            <div class="project-info">
+              <h2>Clicker Game</h2>
+              <p>You click</p>
+              <div class="project-links">
+                <a href="#">Gameplay Video</a>
+                <a
+                  href="https://github.com/juancruz85astronaut/clickergame"
+                  class="secondary"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-thumb">
+              <img src="project3.jpg" alt="Project Preview" />
+            </div>
+            <div class="project-info">
+              <h2>C++ Calculator</h2>
+              <p>
+                A Calculator made in C++ in collaboration with Trevor Childs
+              </p>
+              <div class="project-links">
+                <a href="#">Video</a>
+                <a href="#" class="secondary">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>© 2025 Juan Cruz — All rights reserved.</footer>
+    </div>
+  </body>
+</html>

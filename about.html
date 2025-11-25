@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Me — Juan Cruz</title>
+    <style>
+      :root {
+        --bg: #000000;
+        --card: #111111;
+        --muted: #bbbbbb;
+        --accent: #ff3b3b;
+        --glass: rgba(255, 255, 255, 0.03);
+        --radius: 14px;
+        --maxw: 900px;
+        font-family: "Times New Roman", serif;
+        color-scheme: dark;
+      }
+
+      body {
+        margin: 0;
+        background: linear-gradient(180deg, #000 0%, #1a0000 40%);
+        background-color: #1a0000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #f1f1f1;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .wrap {
+        width: 100%;
+        max-width: var(--maxw);
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .logo {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .mark {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: var(--accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: black;
+      }
+
+      nav {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        color: var(--muted);
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 28px;
+        align-items: center;
+        margin-bottom: 28px;
+      }
+
+      .card {
+        background: var(--card);
+        padding: 24px;
+        border-radius: var(--radius);
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+      }
+
+      h1,
+      h2 {
+        margin-top: 0;
+        color: white;
+      }
+
+      .about-section {
+        display: flex;
+        gap: 26px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .about-photo img {
+        width: 100%;
+        max-width: 240px;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 2px solid #330000;
+        display: block;
+      }
+
+      p {
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .skill {
+        background: #330000;
+        padding: 8px 14px;
+        border-radius: 999px;
+        color: white;
+        font-weight: bold;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* MOBILE BREAKPOINTS */
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 650px) {
+        body {
+          padding: 28px 14px;
+        }
+
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav {
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        h1 {
+          font-size: 26px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 16px;
+        }
+
+        .card {
+          padding: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">
+          <div class="mark">JC</div>
+          <div>
+            <div style="font-weight: bold">Juan Cruz</div>
+            <div style="font-size: 13px; color: var(--muted)">
+              "Developer" • Problem Solver • Funny Potato
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </header>
+
+      <section class="card about-section">
+        <div>
+          <h1>About Me</h1>
+          <p>Hello! I’m Juan Cruz, a human for passion.</p>
+          <p>
+            Lorem ipsum has become one of the most recognizable and widely used
+            placeholder texts in design, publishing, and development...
+          </p>
+
+          <p>When I'm not coding, I am human.</p>
+
+          <h2>My Core Skills</h2>
+          <div class="skills">
+            <div class="skill">HTML / CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">C++ (Learning)</div>
+            <div class="skill">Leadership</div>
+            <div class="skill">Problem Solving</div>
+          </div>
+        </div>
+      </section>
+
+      <footer>© 2025 Juan Cruz — All rights reserved.</footer>
+    </div>
+  </body>
+</html>
